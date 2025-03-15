@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 木质主题色 */
+  --primary-color: #c2a47c;
+  --secondary-color: #d4b898;
+  --accent-color: #b08d6c;
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+}
+
+/* 暗色主题 */
+.dark {
+  --primary-color: #d4b898;
+  --secondary-color: #c2a47c;
+  --accent-color: #b08d6c;
+  --background-color: #1f2937;
+  --text-color: #f3f4f6;
+}
+
+/* 全局背景色 */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* 主按钮样式 */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 次要按钮样式 */
+.btn-secondary {
+  background-color: var(--accent-color);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+}
+
+/* 卡片样式 */
+.card {
+  background-color: rgba(139, 69, 19, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 184, 135, 0.2);
+}
+
+/* 链接样式 */
+a {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* 表单元素 */
+input, textarea, select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(222, 184, 135, 0.3);
+}
+
+/* 导航栏 */
+.navbar {
+  background-color: rgba(42, 27, 13, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* 页面标题 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+/* 分隔线 */
+hr {
+  border-color: var(--accent-color);
+  opacity: 0.3;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+@layer base {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+} 
