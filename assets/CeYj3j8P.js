@@ -1,0 +1,1 @@
+import{j as o,P as t,k as n,c,o as l,a as e,aa as r}from"./CDAX7aCE.js";const d={class:"min-h-screen flex flex-col"},u={class:"flex-grow"},m=o({__name:"default",setup(_){const s=t();return n(()=>s.path==="/"),(a,f)=>(l(),c("div",d,[e("main",u,[e("div",null,[r(a.$slots,"default")])])]))}});export{m as default};
